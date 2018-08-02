@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+
+list: {
+    text += cars[0] + "<br>";
+    text += cars[1] + "<br>";
+    text += cars[2] + "<br>";
+    break list;
+    text += cars[3] + "<br>";
+    text += cars[4] + "<br>";
+    text += cars[5] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <h2>JavaScript Loops</h2>
+
+  <p id="demo1"></p>
+
+  <script>
+  var text = "";
+  var i;
+  for (i = 0; i < 5; i++) {
+      text += "The number is " + i + "<br>";
+      if (i == 2)
+      {
+        break;
+      }
+  }
+  document.getElementById("demo1").innerHTML = text;
+  </script>
+
+  </body>
+  </html>
+

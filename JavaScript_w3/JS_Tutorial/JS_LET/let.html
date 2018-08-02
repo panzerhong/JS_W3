@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YIN MAZATIN</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var x = 10;
+        { x = 1}
+        document.getElementById("demo").innerHTML = x;
+        <!--The value of X is equal to 1-->
+
+        var y = 100;
+        {
+            let y = 4;
+            document.getElementById("demo2").innerHTML = y;
+        }
+        document.getElementById("demo3").innerHTML = y;
+    </script>
+
+</body>
+</html>

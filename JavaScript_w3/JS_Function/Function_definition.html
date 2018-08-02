@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>After a function has been stored in a variable,
+the variable can be used as a function:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = function (a, b) {return a * b};
+document.getElementById("demo").innerHTML = x(4, 3);
+</script>
+
+</body>
+</html>
+
+
+The function above is actually an anonymous function (a function without a name).
+
+Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+The function above ends with a semicolon because it is a part of an executable statement.

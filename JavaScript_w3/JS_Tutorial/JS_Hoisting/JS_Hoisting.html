@@ -1,0 +1,47 @@
+<!--Hoisting is JavaScript's default behavior of moving declarations to the top.-->
+<!--JavaScript Declarations are Hoisted-->
+<!--In JavaScript, a variable can be declared after it has been used.-->
+<!--In other words; a variable can be used before it has been declared.-->
+
+<!--USED BEFORE Declaring-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+
+var x;
+elem2 = document.getElementById("demo2");
+elem2.innerHTML = x ;
+
+</script>
+
+</body>
+</html>
+
+<!--Declared BEFORE Using-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo3"></p>
+
+<script>
+var x; // Declare x
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo3"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+</script>
+
+</body>
+</html>
+
+

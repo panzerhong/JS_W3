@@ -1,0 +1,31 @@
+<!--"use strict"; Defines that JavaScript code should be executed in "strict mode".-->
+
+<!--You can use strict mode in all your programs. It helps you to write cleaner code, like preventing you from using undeclared variables.-->
+
+<!--"use strict" is just a string, so IE 9 will not throw an error even if it does not understand it.-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Using a variable without declaring it, is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<p id = "demo"></p>
+
+<script>
+"use strict";
+x = 3.14;    // This will cause an error (x is not defined).
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+
+<!--The syntax, for declaring strict mode, was designed to be compatible with older versions of JavaScript.-->
+
+<!--Compiling a numeric literal (4 + 5;) or a string literal ("John Doe";) in a JavaScript program has no side effects. It simply compiles to a non existing variable and dies.-->
+
+<!--So "use strict"; only matters to new compilers that "understand" the meaning of it.-->

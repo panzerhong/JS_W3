@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+
+<input type="button" onclick="clicked()" value="Pleace Click to change">
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2">"My name is YINMAZATIN, and I am YINMAZATIN"</p>
+<script>
+    var str = "visit w3school";
+    var searched = str.search("w3school");
+    document.getElementById("demo").innerHTML = searched;
+
+    var str = "visit Cambodia";
+    var replace = str.replace("Cambodia", "japan");
+    document.getElementById("demo1").innerHTML = replace;
+
+    <!--Use String replace() With a Regular Expression-->
+
+    <!--THE MANIN SYNTAX-->
+   <!--pattern/modifiers;-->
+
+    function clicked ()
+    {
+
+    var str = document.getElementById("demo2").innerHTML;
+    var rep = str.replace(/YINMAZATIN/i,"YINMARADY");
+    document.getElementById("demo2").innerHTML = rep;
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

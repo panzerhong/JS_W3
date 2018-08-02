@@ -1,0 +1,41 @@
+<!--Using innerHTML-->
+<!--To access an HTML element, JavaScript can use the document.getElementById(id) method.-->
+
+<!--The id attribute defines the HTML element. The innerHTML property defines the HTML content:-->
+<!--JavaScript can "display" data in different ways:-->
+
+<!--Writing into an HTML element, using innerHTML.-->
+<!--Writing into the HTML output using document.write().-->
+<!--Writing into an alert box, using window.alert().-->
+<!--Writing into the browser console, using console.log().-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+<p id="A">Hello</p>
+
+<BUTTON TYPE="button" onclick="document.write(5+99)">Try it to see 5 +999</BUTTON>
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+document.getElementById("A").innerHTML = (90+10);
+
+<!--document.write()-->
+
+document.write(9+9);
+
+<!-- Window alert -->
+<!--window.alert(5+6);-->
+
+
+<!-- Console -->
+<!--Using console.log()-->
+<!--For debugging purposes, you can use the console.log() method to display data.-->
+console.log(5 +6+9);
+</script>
+
+</body>
+</html>

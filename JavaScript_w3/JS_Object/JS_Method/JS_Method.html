@@ -1,0 +1,52 @@
+Accessing Object Methods
+You access an object method with the following syntax:
+
+objectName.methodName()
+You will typically describe fullName() as a method of the person object, and fullName as a property.
+
+The fullName property will execute (as a function) when it is invoked with ().
+
+This example accesses the fullName() method of a person object:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+
+    var person = {
+        fn : "yin",
+        ln : "mazatin",
+        age : "90",
+        full : function(){
+            return this.fn + " " + this.ln;}
+    }
+
+    document.getElementById("demo").innerHTML = person.full();
+</script>
+</body>
+</html>
+
+<!--The this Keyword-->
+<!--In a function definition, this refers to the "owner" of the function.-->
+
+<!--In the example above, this is the person object that "owns" the fullName function.-->
+
+<!--In other words, this.firstName means the firstName property of this object.-->
+
+Methods are functions stored as object properties.
+
+JavaScript Methods
+JavaScript methods are actions that can be performed on objects.
+
+A JavaScript method is a property containing a function definition.
+
+Property	Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue
+fullName	function() {return this.firstName + " " + this.lastName;}

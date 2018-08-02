@@ -1,0 +1,19 @@
+<!--Variables declared Locally (inside a function) have Function Scope.-->
+<html>
+    <body>
+        <h2>JS Scope variable inside the function</h2>
+        <P ID="d1"></P>
+        <P ID="d2"></P>
+
+        <script>
+            fun();
+            function fun()
+            {
+                var car = "Mercedez";
+                document.getElementById("d1").innerHTML = typeof car +" "+ car;
+            }
+            document.getElementById("d2").innerHTML = typeof car;
+
+        </script>
+    </body>
+</html>

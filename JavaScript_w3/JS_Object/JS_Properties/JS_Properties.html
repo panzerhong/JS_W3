@@ -1,0 +1,41 @@
+<!--Properties are the most important part of any JavaScript object.-->
+
+<!--JavaScript Properties-->
+<!--Properties are the values associated with a JavaScript object.-->
+
+<!--A JavaScript object is a collection of unordered properties.-->
+
+<!--Properties can usually be changed, added, and deleted, but some are read only.-->
+
+<!--1.Method : Accessing via ( object.property )-->
+<html>
+    <head>
+        <title>YIN MAZATIN</title>
+    </head>
+    <body>
+        <p>Hello</p>
+        <p id="demo">
+            demo
+        </p>
+        <p>Close the object mutable</p>
+
+        <h1>Accessing the object property via " objectname.property</h1>
+        <p id="demo1"></p>
+
+        <h1>Accessing the object property via " objectname["property"]</h1>
+        <p id="demo2"></p>
+    </body>
+
+    <script>
+        var person = { fn:"yin", ln:"tin", age:"19"};
+        var change = person;
+        change.age = 20;
+        document.getElementById("demo").innerHTML = person.age;
+
+        document.getElementById("demo1").innerHTML = " My name is " + person.fn + " "+ person.ln + " I am "+person.age;
+
+        document.getElementById("demo2").innerHTML = " My name is " + person["fn"] + " " + person["ln"] + " I am " + person["age"];
+
+
+    </script>
+</html>

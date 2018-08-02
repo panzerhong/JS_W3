@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Never create strings as objects.</p>
+<p>Strings and objects cannot be safely compared.</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var x = "John";              // x is a string
+var y = new String("John");  // y is an object
+document.getElementById("demo").innerHTML = x==y; // can compare between string and obj
+
+var a = new String("A");
+var b = new String("A");
+document.getElementById("demo1").innerHTML = a==b; // cannot compare between obj and obj
+
+</script>
+
+</body>
+</html>

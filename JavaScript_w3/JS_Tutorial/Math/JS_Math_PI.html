@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript math.PI</title>
+</head>
+
+<body>
+    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+    <p id="demo"></p>
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id="demo1"></p>
+
+    <p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<p id="demo2"></p>
+
+    <p>Math.pow(x,y) returns the value of x to the power of y:</p>
+<p id="demo3"></p>
+
+    <p>Math.abs(x) returns the absolute (positive) value of x:</p>
+<p id="demo4"></p>
+
+    <p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:</p>
+<p id="demo5"></p>
+
+    <p>Math.floor() rounds a number <strong>down</strong> to its nearest integer:</p>
+<p id="demo6"></p>
+
+    <p>Math.min() & Math.max() rounds a number <strong>down</strong> to its nearest integer:</p>
+<p>Maximum = </p><p id="demo7"></p>
+    <p>Minimum = </p><p id="demo8"></p>
+
+    <p>Maximum = </p><p id="demo9"></p>
+    <p>Minimum = </p><p id="demo10"></p>
+
+<p>Math.random() returns a random number between 0 (included) and 1 (excluded):</p>
+<p id="demo11"></p>
+
+    <p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both
+included):</p>
+    <p id="demo12"></p>
+
+    <p>Math.floor(Math.random() * 10) + 1) returns a random integer between 1 and 10
+(both included):</p>
+    <p id="demo13"></p>
+
+    <p>Math.floor(Math.random() * 100) + 1) returns a random integer between 1 and
+100 (both included):</p>
+
+<p id="demo14"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = Math.PI;
+        document.getElementById("demo1").innerHTML = Math.round(4.58);
+        document.getElementById("demo2").innerHTML = Math.pow(8,2);
+
+        document.getElementById("demo3").innerHTML = Math.sqrt(64);
+        document.getElementById("demo4").innerHTML = Math.abs(-4.4);
+
+        document.getElementById("demo5").innerHTML = Math.ceil(4.4);
+        document.getElementById("demo6").innerHTML = Math.floor(4.9);
+
+        var ma = [4,5,2,76,2];
+        document.getElementById("demo7").innerHTML = Math.max.apply(null,ma);
+        document.getElementById("demo8").innerHTML = Math.min.apply(null,ma);
+
+        document.getElementById("demo9").innerHTML = Math.max(4,5,6,2,1);
+        document.getElementById("demo10").innerHTML = Math.min(4,5,6,2,1);
+
+        <!--Math.random() always returns a number lower than 1.-->
+        document.getElementById("demo11").innerHTML = Math.random();
+
+        <!--Math.random() always returns a number lower than 10-->
+        document.getElementById("demo12").innerHTML = (Math.random()*10);
+
+        <!--Math.random() always returns a number lower than 10-->
+        document.getElementById("demo13").innerHTML = Math.floor(Math.random()*10)+1;
+
+        document.getElementById("demo14").innerHTML = Math.ceil(Math.random()*100)+99;
+
+    </script>
+
+</body>
+</html>
